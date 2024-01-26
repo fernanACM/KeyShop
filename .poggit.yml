@@ -1,0 +1,18 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/fernanACM/KeyShop
+build-by-default: true
+branches:
+- PM5
+projects:
+  KeyShop:
+    path: ""
+    libs:
+       - src: Vecnavium/FormsUI/FormsUI
+         version: ^1.1.3
+      - src: ACM-PocketMine-MP/libPiggyUpdateChecker/libPiggyUpdateChecker
+        version: ^2.0.0
+      - src: DaPigGuy/libPiggyEconomy/libPiggyEconomy
+        version: ^3.0.2
+        branch: "master"
+    lint:
+      phpstan: false
+...
