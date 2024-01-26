@@ -1,0 +1,57 @@
+#  _  __                 ____    _                     
+# | |/ /   ___   _   _  / ___|  | |__     ___    _ __  
+# | ' /   / _ \ | | | | \___ \  | '_ \   / _ \  | '_ \ 
+# | . \  |  __/ | |_| |  ___) | | | | | | (_) | | |_) |
+# |_|\_\  \___|  \__, | |____/  |_| |_|  \___/  | .__/ 
+#                |___/                          |_|    
+#         by fernanACM
+# A store plugin to sell keys on your server. It accepts 
+# all types of keys from each plugin, which is why it is unique in its kind.
+
+# DO NOT TOUCH!
+config-version: "1.0.0"
+# Prefix plugin
+Prefix: "&l&f[&bKEYSHOP&f]&8»&r "
+# Usa economyapi, bedrockeconomy, xp
+Economy: 
+  provider: bedrockeconomy
+# Here put the command to give you a key
+# {PLAYER} => Player name
+# {KEY} => The key has to be received
+# {AMOUNT} => The number of keys
+Key-command: key give "{PLAYER}" {KEY} {AMOUNT}
+# EXAMPLE:
+# KEYS:
+# - {LINE} => Line break
+# - {AMOUNT} => Number of keys
+# - {PRICE} => Price of the key
+# - "&" => Color
+# KeyShop:
+#   Common: // THE NAME OF THE KEY WILL GO HERE (MUST BE EXACT)
+#     name: "&l&cCOMUN{LINE}&r&0x{AMOUNT} | cost: {PRICE}$" // OPTIONAL
+#     price: 323 // Key price
+#     image: "textures/items/cancel" // OPTIONAL - URL or PATH
+#     amount: 2 // Number of keys to receive
+KeyShop:
+  Common:
+    price: 334
+    name: "&l&cCOMMON{LINE}&r&0x{AMOUNT} | cost: {PRICE}$"
+    image: "textures/items/diamond" # Ruta de la imagen (opcional)
+    amount: 1
+  Epic:
+    price: 323
+    name: "&l&5EPIC{LINE}&r&0x{AMOUNT} | cost: {PRICE}$"
+    image: "https://preview.redd.it/you-have-an-ugly-gray-creeper-instead-of-a-minecraft-icon-v0-y83ppc5i6r4b1.png?width=1024&format=png&auto=webp&s=12576cea991cd7c24bd277c1c43800e81ea0e73a" # Ruta de la imagen (opcional)
+    amount: 1
+
+# Form => Keyshop
+Form:
+  title: "&l&9KEYSHOP"
+  content: "&eSelect the key of your preference:"
+# Messages
+Messages:
+  error:
+    no-config: "&cApparently there are no keys available..."
+    no-money: "&cYou don't have enough money to make this purchase!"
+  success:
+    successful-purchase: "&aYou have purchased &bx{AMOUNT} {KEY}&a keys for only &b{PRICE}$"
