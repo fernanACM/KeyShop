@@ -11,7 +11,7 @@ A store plugin to sell keys on your server. Only for PocketMine-MP 5.0
 ### 📸 Images
 <img src="https://github.com/fernanACM/KeyShop/assets/83558341/4e94ca04-2c10-4eab-b44a-8161b3b42bd9">
 
-## 🌍 Wiki
+### 🌍 Wiki
 * Check our plugin [wiki](https://github.com/fernanACM/KeyShop/wiki) for features and secrets in the...
 
 ### 💡 Implementations
