@@ -5,6 +5,7 @@ branches:
 projects:
   KeyShop:
     path: ""
+    icon: "keyshop-icon.png"
     libs:
       - src: Vecnavium/FormsUI/FormsUI
         version: ^1.1.3
